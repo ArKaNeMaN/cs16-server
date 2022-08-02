@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: cs-main-server
+    container_name: cs-${CONTAINERS_NAME:-main}-server
     restart: unless-stopped
 
     depends_on:
@@ -28,7 +28,7 @@ services:
 
   mariadb:
     image: mariadb:latest
-    container_name: cs-main-mariadb
+    container_name: cs-${CONTAINERS_NAME:-main}-mariadb
     restart: unless-stopped
 
     environment:
@@ -47,7 +47,7 @@ services:
     build:
       context: ./fastdl
       dockerfile: ./Dockerfile
-    container_name: cs-main-fastdl
+    container_name: cs-${CONTAINERS_NAME:-main}-fastdl
     restart: unless-stopped
 
     depends_on:
