@@ -1,11 +1,11 @@
-# Counter Strike 1.6 Server
+# [WIP] Counter Strike 1.6 Server
 
 Докеризированный Counter Strike 1.6 сервер.
 
 ## Переменные среды
 
 | Переменная            | По умолчанию          | Описание
-| :---:                 | :---                  | :---
+| :---                  | :---                  | :---
 | `CONTAINERS_NAME`     | `main`                | Префикс названий контейнеров
 | `FORWARD_SERVER_PORT` | `27015`               | Внешний порт сервера
 | `DB_ROOT_PASSWORD`    | `g4nfhk4hjgf4kfg4`    | Пароль root-пользователя БД
