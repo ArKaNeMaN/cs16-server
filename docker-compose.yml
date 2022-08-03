@@ -32,7 +32,7 @@ services:
     restart: unless-stopped
 
     environment:
-      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD:-g4nfhk4hjgf4kfg4}'
+      MYSQL_ROOT_PASSWORD: '${DB_ROOT_PASSWORD:-g4nfhk4hjgf4kfg4}'
       MYSQL_DATABASE: '${DB_DATABASE:-csserver}'
       MYSQL_USER: '${DB_USERNAME:-csserver}'
       MYSQL_PASSWORD: '${DB_PASSWORD:-qwerty}'
